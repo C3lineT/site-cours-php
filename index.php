@@ -126,7 +126,61 @@
 
       direBonjourATous($liste_eleves, 'h3');
 
-      
+      $liste_eleves_deux_dimensions = [
+        'Alexandre' => [
+            'message' => "Bonjour !",
+        ],
+        'Noe' => [
+            'message' => "Salut !",
+        ], 
+        'David' => [
+            'message' => "Ciao !",
+        ],
+        'Lila' => [
+            'message' => "Hello !",
+        ],
+        'Rudy' => [
+            'message' => "Welcome !",
+        ],
+        'Mike' => [
+            'message' => "Hi !",
+        ],
+        'Celine' => [
+            'message' => "Plop !",
+        ],
+        'Celine' => [
+            'message' => "Hola !",
+        ],
+        'Laetitia' => [
+            'message' => "Yo !",
+        ],
+        'Samia' => [
+            'message' => "Hallo !",
+        ],
+        'Mahjoub' => [
+            'message' => "Coucou !",
+        ],
+    ];
+
+    foreach($liste_eleves_deux_dimensions as $key => $value) {
+      echo $key . " dit " . $value['message'];
+    }
+
+    $tabAgeEleve = [
+      'Juliette' => ['age' => 30],
+      'Claire' => ['age' => 20],
+      'Lucie' => ['age' => 38],
+      'Julie' => ['age' => 19],
+      'Marc' => ['age' => 34],
+      'Claude' => ['age' => 27],
+    ];
+
+    foreach($tabAgeEleve as $key => $value) {
+      echo $key . " a " . $value['age'] . ' ans   '; 
+    }
+
+
+
 
 
 
