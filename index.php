@@ -25,7 +25,111 @@
 
 <body>
     <?php
-    include("url");
+      function ajouterDix($nombre) 
+      {
+        $nombre +=10;
+        return $nombre .  "<br/>";
+      }
+
+      //echo ajouterDix(10);
+      
+
+      $a = 4 ;
+      $b = 5;
+      function somme($a,$b)
+      {
+        $somme2nb = $a + $b ;
+        return $somme2nb .  "<br/>";
+      }
+
+      //echo somme(13,24);
+
+
+      function direBonjourEleve($nom="Nicolas") 
+      {
+        $bonjourPhrase = "Bonjour " . $nom . ", ça va ? <br/>";
+        return $bonjourPhrase;
+       }
+
+      //echo direBonjourEleve("Samuel") ;
+
+      function direBonjour2($nom2) 
+      {
+        $bonjour2 = '<h1> Bonjour ' . $nom2 . ', ça va?</h1> <br/>';
+        return $bonjour2;
+
+      }
+
+      //echo direBonjour2("Clémence");
+
+
+      function debug($variableToDump)
+      {
+        echo '<pre>';
+        var_dump($variableToDump);
+        echo '</pre>';
+      }
+
+     // echo debug("Coucou");
+
+      $liste = [1, 2, 4, 8, 9];
+      debug ($liste);
+
+      $liste_eleves =[
+        'Alexandre',
+        'Noe',
+        'David',
+        'Lila',
+        'Rudy',
+        'Mike',
+        'celine',
+        'Celine',
+        'Laetitia',
+        'Mahjoub',
+        'Samia',      
+      ];
+
+      count($liste_eleves);
+
+      for($i =0; $i < count($liste_eleves); $i++) {
+        echo "Bonjour $liste_eleves[$i] ! <br/>";
+      }
+
+     /* function direBonjour3($liste_eleves,$balise){
+        for($i =0; $i < count($liste_eleves); $i++) {
+          echo "<$balise>Bonjour $liste_eleves[$i] !<$balise/> <br/>";
+        }
+      };
+
+      direBonjour3( $liste_eleves, 'h1'); */
+
+      function direBonjourAvecHtml($name, $balise){
+        return "<$balise>Bonjour $name, ça va ?
+        <$balise/> <br/>";
+      }
+
+      foreach ($liste_eleves as $key => $value) {
+       echo direBonjourAvecHtml($value, 'h1');
+      };
+
+      function direBonjourANom($name, $balise)
+      {
+        return "<$balise> Bonjour $name , ça va ?<$balise/>";
+      }
+
+      function direBonjourATous($listeDePrenom, $balise)
+      {
+        foreach ($listeDePrenom as $key =>$value){
+          echo direBonjourANom ($value, $balise);
+        }
+      }
+
+      direBonjourATous($liste_eleves, 'h3');
+
+      
+
+
+
     ?> 
     <script src="js/scripts.js"></script>
 </body>
