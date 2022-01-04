@@ -167,16 +167,16 @@
     }
 
     $tabAgeEleve = [
-      'Juliette' => ['age' => 30],
-      'Claire' => ['age' => 20],
-      'Lucie' => ['age' => 38],
-      'Julie' => ['age' => 19],
-      'Marc' => ['age' => 34],
-      'Claude' => ['age' => 27],
+      'Juliette' => ['age' => 30, 'langue' => 'Allemand'],
+      'Claire' => ['age' => 20, 'langue' => 'Italien'],
+      'Lucie' => ['age' => 38, 'langue' => 'Anglais'],
+      'Julie' => ['age' => 19, 'langue' => 'Espagnol'],
+      'Marc' => ['age' => 34, 'langue' => 'Portuguais'],
+      'Claude' => ['age' => 27, 'langue' => 'Breton'],
     ];
 
     foreach($tabAgeEleve as $key => $value) {
-      echo $key . " a " . $value['age'] . ' ans   '; 
+      echo $key . " a " . $value['age'] . ' ans et parle '. $value['langue'] . '.</br> '; 
     }
 
 
