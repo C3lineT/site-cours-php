@@ -179,6 +179,8 @@
       echo $key . " a " . $value['age'] . ' ans et parle '. $value['langue'] . '.</br> '; 
     }
 
+    debug($tabAgeEleve['Juliette']['langue']);
+
 
 
 
