@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 15 px;
     box-sizing: border-box;
 }
 
@@ -8,9 +8,20 @@
 {
     background-color: blueviolet;
     color: chartreuse;
-    font-size: large;
     font-family: Arial;
     display: flex;
-    text-align: center;
+    margin: 15 px;
+    border: solid 8px greenyellow;
+    border-radius: 30px;
+}
 
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    background-color: rgb(131, 3, 250);
+    border-radius: 30 px;
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-
+<div class="container">
 <?php
 
 function debug($variableToDump)
@@ -61,9 +61,8 @@ $liste_personne_message = [
 
     function direTousLesMessageDe($liste_personne_message,$name )
     {
-        echo $name;
         foreach($liste_personne_message[$name]['messages'] as $key => $value){
-            echo ' a reçu ce messages : ' . $value['message'] . " " . $value['date'] . '</br>';
+            echo '<p>' . $value['date'] . ", </br>" . $name .  ' a reçu ce message : </br>' . $value['message'] . " " . '</br></p>';
 
         }
 
