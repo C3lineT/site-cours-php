@@ -69,6 +69,7 @@
         var_dump($variableToDump);
         echo '</pre>';
       }
+      include
 
      // echo debug("Coucou");
 
