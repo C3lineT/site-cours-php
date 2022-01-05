@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container 
+{
+    background-color: blueviolet;
+    color: chartreuse;
+    font-size: large;
+    font-family: Arial;
+    display: flex;
+    text-align: center;
+
+}
