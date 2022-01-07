@@ -19,7 +19,6 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="./assets/styles/styleCV.css">
   <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
@@ -88,7 +87,12 @@
         </nav>
         <div class="content">
         <?php 
-            if($_GET['password'] == $config['passwordHttp']) {
+            if(isset($_GET['password'])){
+                $password = $_GET['password'];
+            } else {
+                $password = 'badpass';
+            }
+            if($password == $config['passwordHttp']) {
                 include './src/includes/login.inc.php';
             } else {
                 include './src/includes/oops.inc.php';
