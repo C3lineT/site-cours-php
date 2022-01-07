@@ -1,8 +1,7 @@
 <h1> Mon super formulaire </h1>
 <?php
-    $dataBase = new PDO('mysql:host=localhost;dbname=php_ddb', 'root', '');
 
-    $dataBase->query($sql);
+    //$dataBase->query($sql);
 
     //debug($dataBase->query($sql));
 
@@ -46,14 +45,12 @@ if(isset($_POST) && !empty($_POST)){
 };
 
 
-$sql ="SELECT * FROM `experiences`";
+/*foreach (debug(getAll($dataBase, 'experiences')) as $value){
+    debug($value);
+}*/
 
-foreach($dataBase->query($sql) as $key => $value){
-    echo $value["title_experience"];
-    echo '</br>';
-    echo $value["long_text_experience"];
-    echo '</br>';
-}
+include './src/includes/experiences.inc.php' ;
+
 
 ?>
 

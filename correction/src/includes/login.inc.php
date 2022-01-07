@@ -23,6 +23,13 @@ switch ($page) {
     case 'formulaire':
         include './src/includes/formulaire.inc.php';
         break;
+    case 'experiences' :
+        include './src/includes/experiences.inc.php';
+        break;
+    case 'experiences' :
+        include './src/includes/formations.inc.php';
+        break;
+    
     default:
         include './src/includes/accueil.inc.php';
         break;

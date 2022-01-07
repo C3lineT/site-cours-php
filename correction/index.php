@@ -25,6 +25,7 @@
 <body>
     <?php 
         include './src/devtool/debug.devtool.php';
+        include './src/database.php' ;
 
         $config =[
             'passwordHttp' => 'untrukopif',
@@ -53,8 +54,8 @@
                             "href" => "profile"
                         ],
                         [
-                            "name" => "Test",
-                            "href" => "test"
+                            "name" => "Mes experiences",
+                            "href" => "experiences"
                         ],
                         [
                             "name" => "Me contacter",
@@ -63,6 +64,10 @@
                         [
                             "name" => "formulaire",
                             "href" => "formulaire"
+                        ],
+                        [
+                            "name" => "formations",
+                            "href" => "formations"
                         ]
                     ];
 
